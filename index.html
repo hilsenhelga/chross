@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chross</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* layout idea: wordmark on top, two vertical films side by side, one short text below */
+  --ink: #0c0c0d;
+  --paper: #f3f1ec;
+  --ash: #8d8d8b;
+  --font: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--ink); }
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.55;
+}
+main { max-width: 980px; margin: 0 auto; padding: 28px 16px 56px; }
+h1 {
+  font-size: clamp(56px, 16vw, 150px);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: .85;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.films { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.films video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #000; }
+.text { max-width: 34em; margin-top: 32px; }
+.names { margin-top: 14px; font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Chross</h1>
+  <div class="films">
+    <video src="night.mp4" poster="night.jpg" muted loop playsinline autoplay preload="auto" aria-label="En person ryger ved et vindue om natten"></video>
+    <video src="day.mp4" poster="day.jpg" muted loop playsinline autoplay preload="auto" aria-label="En person sidder op ad en væg under et vindue"></video>
+  </div>
+  <div class="text">
+    <p>Chross er en dansksproget duo bestående af Andreas Skovdam og Pelle Simoni. Musikken bevæger sig i krydsfeltet mellem det poppede og det eksperimentelle og blander elektroniske og akustiske elementer.</p>
+    <p class="names">Andreas Skovdam &amp; Pelle Simoni</p>
+  </div>
+</main>
+</body>
+</html>
