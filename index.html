@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* layout idea: wordmark on top, two vertical films side by side, one short text below */
+  /* layout idea: wordmark on top, two vertical films side by side, nothing else */
   --ink: #0c0c0d;
   --paper: #f3f1ec;
   --ash: #8d8d8b;
@@ -36,8 +36,6 @@ h1 {
 }
 .films { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .films video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #000; }
-.text { max-width: 34em; margin-top: 32px; }
-.names { margin-top: 14px; font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
 </style>
 </head>
 <body>
@@ -46,10 +44,6 @@ h1 {
   <div class="films">
     <video src="night.mp4" poster="night.jpg" muted loop playsinline autoplay preload="auto" aria-label="En person ryger ved et vindue om natten"></video>
     <video src="day.mp4" poster="day.jpg" muted loop playsinline autoplay preload="auto" aria-label="En person sidder op ad en væg under et vindue"></video>
-  </div>
-  <div class="text">
-    <p>Chross er en dansksproget duo bestående af Andreas Skovdam og Pelle Simoni. Musikken bevæger sig i krydsfeltet mellem det poppede og det eksperimentelle og blander elektroniske og akustiske elementer.</p>
-    <p class="names">Andreas Skovdam &amp; Pelle Simoni</p>
   </div>
 </main>
 </body>
